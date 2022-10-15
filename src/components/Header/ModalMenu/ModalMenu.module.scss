@@ -1,0 +1,142 @@
+#modalMenu {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  background-color: #000000;
+  z-index: 999999;
+}
+
+.modalMenu__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.modalMenu__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+.modalMenu__buttons {
+  display: flex;
+  gap: 11px;
+}
+
+#modalMenu__twitterIcon {
+  display: block;
+}
+
+.modalMenu__close {
+  cursor: pointer;
+  display: block;
+  background: none;
+  border: 0px;
+}
+
+.modalMenu__capIndicators__mobile {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: -100px;
+  gap: 11px;
+
+  padding: 0px;
+}
+
+.modalMenu__capIndicator {
+  padding: 4px 12px;
+  background: rgba(48, 48, 48, 0.75);
+  border-radius: 8px;
+}
+
+.modalMenu__capIndicator__red {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff2020;
+}
+
+.modalMenu__capIndicator__white {
+  margin-left: 6px;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+.modalMenu__capIndicator__red,
+.modalMenu__capIndicator__white {
+  display: table;
+  margin: 0 auto;
+}
+
+.modalMenu__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 0px;
+}
+
+.modalMenu__menuA {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height */
+
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff2020;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+  }
+}
+
+.modalMenu__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalMenu__footerIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+
+.modalMenu__footerCopyright {
+  margin-bottom: 30px;
+  margin-top: 35px;
+
+
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+
+  color: #7c7c7c;
+}

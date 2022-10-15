@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'fonts';
+@import 'colors';
+
+@import '../components/Header/Header.module.scss';
+@import '../components/Header/ModalMenu/ModalMenu.module.scss';
+@import '../components/Intro/Intro.module.scss';
+@import '../components/Roadmap/Roadmap.module.scss';
+@import '../components/Whyis/Whyis.module.scss';
+@import '../components/HydeNationPrescription/HydeNationPrescription.module.scss';
+@import '../components/HydeNationPass/HydeNationPass.module.scss';
+@import '../components/Diagram/Diagram.module.scss';
+@import '../components/NftDesign/NftDesign.module.scss';
+@import '../components/Outro/Outro.module.scss';
+@import '../components/Footer/Footer.module.scss';
+
+.container {
+  // position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+  background: linear-gradient(180deg, #0a0a0a 0%, rgba(10, 10, 10, 0) 100%);
+  background: url(@images/background.webp);
+}
+
+.headingH1__white {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 111px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.headingH1__red {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 111px;
+  text-transform: uppercase;
+  color: #ff2020;
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+}
+
+@media (max-width: 1279px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .headingH1__white {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .headingH1__red {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff2020;
+    text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+  }
+}

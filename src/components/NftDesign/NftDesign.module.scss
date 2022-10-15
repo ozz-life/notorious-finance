@@ -1,0 +1,122 @@
+.nftDesign {
+  display: flex;
+  flex-direction: column;
+  padding-top: 135px;
+  @media (min-width: 1279px) {
+    padding-top: 183px;
+    flex-direction: row;
+  }
+}
+.nftDesign__flexA,
+.nftDesign__flexB {
+  @media (min-width: 1279px) {
+    width: 50%;
+  }
+}
+
+.nftDesign__flexA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nftDesign__flexB {
+}
+.nftDesign__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1279px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.nftDesign__image {
+  margin-bottom: 32px;
+}
+
+.nftDesign__text {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1279px) {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.nftDesign__hWhite {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height */
+
+  color: #ffffff;
+  @media (max-width: 1279px) {
+    text-align: center;
+  }
+  @media (min-width: 1279px) {
+    font-size: 96px;
+    line-height: 111px;
+  }
+}
+.nftDesign_hRed {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height */
+
+  color: #ff2020;
+
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+  @media (max-width: 1279px) {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 1279px) {
+    font-size: 96px;
+    line-height: 111px;
+  }
+}
+.nftDesign__photo {
+  margin-bottom: 32px;
+}
+.nftDesign__paragraph {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  color: #ffffff;
+  @media (max-width: 1279px) {
+    text-align: center;
+  }
+  @media (min-width: 1279px) {
+    width: 426px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.nftDesign__link {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff2020;
+  text-decoration: none;
+
+  @media (min-width: 1279px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}

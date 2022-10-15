@@ -1,0 +1,211 @@
+.whyIs {
+  position: relative;
+  margin-top: 50px;
+  @media (min-width: 1279px) {
+    margin-top: -200px;
+  }
+}
+
+.whyIs__container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.whyIs__link {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff2020;
+  text-decoration: none;
+
+  @media (min-width: 1279px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.whyIs__headingH1_white {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.whyIs__headingH1_red {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #ff2020;
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+}
+
+.whyIs__h2-blue {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+  text-align: center;
+  color: #2094ff;
+  margin-bottom: 16px;
+}
+
+.whyIs__h2-red {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ff2020;
+  margin-bottom: 16px;
+}
+
+.whyIs__paragraph {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.whyIs__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whyIs__flexA {
+  order: 1;
+}
+.whyIs__flexB {
+  order: 2;
+}
+.whyIs__flexC {
+  order: 4;
+}
+.whyIs__flexD {
+  order: 3;
+}
+
+@media (min-width: 1279px) {
+  .whyIs__headingH1_white {
+    position: relative;
+    top: 5px;
+    left: -78px;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 111px;
+  }
+  .whyIs__headingH1_red {
+    position: relative;
+    top: 20px;
+    left: 511px;
+    width: 455px;
+    text-align: left;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 111px;
+    color: #ff2020;
+    text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+  }
+
+  .whyIs__h2-blue {
+    line-height: 24px;
+    text-align: left;
+    // margin-bottom: 10px;
+  }
+  .whyIs__h2-red {
+    line-height: 24px;
+    text-align: right;
+  }
+
+  .whyIs__paragraph {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .whyIs__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .whyIs__flexA {
+    position: relative;
+    top: -283px;
+    left: 100px;
+    order: 1;
+    width: 100%;
+    max-width: 373px;
+  }
+  .whyIs__flexB {
+    position: relative;
+    top: -77px;
+    left: 35px;
+    width: 253px;
+    order: 2;
+  }
+  .whyIs__flexC {
+    position: relative;
+    top: 6px;
+    left: 58px;
+    width: 380px;
+    order: 3;
+  }
+  .whyIs__flexD {
+    position: relative;
+    top: -301px;
+    left: -104px;
+    width: 100%;
+    max-width: 392px;
+    order: 4;
+  }
+  .whyIs__flexA-image,
+  .whyIs__flexD-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .whyIs__paragraph_B {
+    text-align: left;
+    width: 253px;
+  }
+  .whyIs__paragraph_C {
+    text-align: right;
+    width: 380px;
+  }
+}

@@ -1,0 +1,36 @@
+/*
+ * Fonts
+ ******************************************************************************/
+/* @font-face нужно объявлять до того, как вы обратитесь в CSS к этому шрифту.
+ Принято подключать шрифты в самом начале файла стилей (но после всех @import)
+ Fonts Helper: https://google-webfonts-helper.herokuapp.com/fonts             */
+
+ /* play-regular - latin */
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('@fonts/play-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('@fonts/play-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* play-700 - latin */
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('@fonts/play-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('@fonts/play-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* shadows-into-light-regular - latin */
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('@fonts/shadows-into-light-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('@fonts/shadows-into-light-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

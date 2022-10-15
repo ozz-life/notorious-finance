@@ -1,0 +1,164 @@
+/*
+ * https://ozz.life/ - Cascading Style Sheets
+ ******************************************************************************/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+.header__bgEllipseWrapper {
+  display: flex;
+  position: relative;
+}
+
+.header__bgEllipse {
+  position: absolute;
+  z-index: -1;
+  margin-left: 103px;
+}
+
+menu.header__menu {
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: 16px;
+}
+
+menu.header__menu > li.header__menuLi > a.header__menuA {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff2020;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+  }
+}
+
+.capIndicators {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4px 12px;
+  gap: 6px;
+}
+
+.capIndicators__mobile {
+  display: none;
+
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4px 12px;
+  gap: 6px;
+}
+
+.capIndicator {
+  padding: 4px 12px;
+  background: rgba(48, 48, 48, 0.75);
+  border-radius: 8px;
+}
+
+.capIndicator__red {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff2020;
+}
+
+.capIndicator__white {
+  margin-left: 6px;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+//
+svg.header__button:hover * {
+  fill: red;
+}
+
+#header__ourTwitter {
+  display: block;
+}
+
+#header__twitterIcon {
+  display: none;
+}
+.header__menuBurger {
+  display: none;
+}
+
+@media (max-width: 1450px) {
+    .header__bgEllipse {
+        position: absolute;
+        z-index: -1;
+        margin: auto;
+      }
+
+  menu.header__menu {
+    display: none;
+  }
+  .header__buttons {
+    display: flex;
+    gap: 11px;
+  }
+  #header__ourTwitter {
+    display: none;
+  }
+
+  #header__twitterIcon {
+    display: block;
+  }
+  .header__menuBurger {
+    cursor: pointer;
+    display: block;
+    background: none;
+    border: 0px;
+  }
+}
+
+@media (max-width: 770px) {
+  .capIndicators {
+    display: none;
+  }
+
+  .capIndicators__mobile {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 0px;
+
+    padding: 0px;
+  }
+
+  .capIndicator__red,
+  .capIndicator__white {
+    display: table;
+    margin: 0 auto;
+  }
+}

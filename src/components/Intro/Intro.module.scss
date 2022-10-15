@@ -1,0 +1,244 @@
+/* Принудительно задать высоту блоков */
+
+.intro1 {
+  min-height: 500px;
+}
+
+.intro2 {
+  min-height: 675px;
+  margin-top: 44px;
+}
+
+@media (min-width: 1279px) {
+  .intro1 {
+    min-height: 800px;
+  }
+  .intro2 {
+    min-height: 490px;
+  }
+}
+
+/* Intro1 */
+.intro1 {
+  position: relative;
+}
+
+.intro1__bgImageWrapper {
+  position: absolute;
+  z-index: -1;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-45%) translateY(0);
+}
+
+.intro1__headingH1_white {
+  position: absolute;
+  top: 232px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+}
+
+.intro1__headingH1_red {
+  position: absolute;
+  top: 289px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+}
+
+.intro1__image {
+  display: block;
+  width: 416px;
+  max-width: 100%;
+  height: auto;
+}
+
+.intro1__paragraph {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+
+  text-align: center;
+  width: 259px;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 356px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+}
+
+.intro1__paragraph_span-red {
+  color: #ff2020;
+  &:after {
+    content: ' ';
+    white-space: pre;
+  }
+}
+
+.intro1__button {
+  position: absolute;
+  top: 462px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #ff2020;
+  color: #ffffff;
+  padding: 12px 32px;
+  box-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    background-color: #000000;
+  }
+}
+
+@media (min-width: 1279px) {
+  .intro1__bgImageWrapper {
+    top: -40px;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .intro1__image {
+    display: block;
+    width: 942px;
+    max-width: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    height: auto;
+  }
+
+  .intro1__headingH1_white {
+    position: absolute;
+    left: 640px;
+    top: 408px;
+    margin: 0;
+    transform: translateX(0) translateY(0);
+  }
+
+  .intro1__headingH1_red {
+    position: absolute;
+    transform: translateX(0) translateY(0);
+    left: 640px;
+    top: 513px;
+    margin: 0;
+  }
+
+  .intro1__paragraph {
+    position: relative;
+    left: 640px;
+    top: 645px;
+    transform: translateX(0) translateY(0);
+
+    color: #ffffff;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 18px;
+    line-height: 24px;
+    width: 450px;
+    max-width: 450px;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .intro1__button {
+    z-index: 1;
+    position: relative;
+    left: 640px;
+    top: 666px;
+    transform: translateX(0) translateY(0);
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background: #ff2020;
+    color: #ffffff;
+    padding: 12px 32px;
+    box-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+    border-radius: 4px;
+
+    cursor: pointer;
+  }
+}
+
+/* Intro2 */
+
+.intro2__bgImageWrapper {
+  position: relative;
+  left: -20px;
+}
+
+.intro2__invertedComma {
+  position: absolute;
+  width: 46px;
+  height: 111px;
+  left: calc(50% - 46px / 2 + 23.5px);
+  top: 844px;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 111px;
+  color: #ff2020;
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+}
+.intro2__paragraph {
+  position: absolute;
+  width: 163px;
+  height: 260px;
+  left: calc(50% - 163px / 2 + 82px);
+  top: 918px;
+
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+@media (min-width: 1279px) {
+  //shift 130
+
+  .intro2__bgImageWrapper {
+    position: relative;
+    top: -125px;
+    left: -41px;
+  }
+
+  .intro2__invertedComma {
+    position: relative;
+    top: -513px;
+    left: 577px;
+  }
+  .intro2__paragraph {
+    left: calc(50% - 640px / 2 + 320px);
+    top: 1104px;
+    width: 640px;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
+  }
+}

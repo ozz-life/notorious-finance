@@ -1,0 +1,115 @@
+.diagram__flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 190px;
+  @media (min-width: 1279px) {
+    flex-direction: row;
+  }
+}
+
+.diagram__flexA,
+.diagram__flexB {
+  @media (min-width: 1279px) {
+    width: 50%;
+  }
+}
+
+.diagram__flexA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.diagram__flexB {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.diagram__image {
+  margin-bottom: 48px;
+}
+
+.diagram__paragraph {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  @media (min-width: 1279px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.diagram__rates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+  align-items: baseline;
+  @media (min-width: 1279px) {
+    justify-content: flex-start;
+  }
+}
+.diagram__rateItem {
+}
+.diagram__rate50 {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  /* identical to box height */
+
+  color: #ff2020;
+
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+}
+.diagram__rateSub {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+  @media (min-width: 1279px) {
+  }
+}
+.diagram__rate25 {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 62px;
+
+  color: #ff2020;
+
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+}
+.diagram__rate15 {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height */
+
+  color: #ff2020;
+
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+}
+.diagram__rate10 {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+
+  color: #ff2020;
+
+  text-shadow: 0px 0px 24px rgba(255, 32, 32, 0.5);
+}
