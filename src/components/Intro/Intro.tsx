@@ -32,22 +32,13 @@ const Intro = () => {
               is a revolution of compounding leverage farming.
             </p>
             <p>
-              <a className="intro1__button" href="https://google.com/">
+              <a className="intro1__button" href="#">
                 MINT HERE
               </a>
             </p>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
 
       <section className="intro2">
         <div className="container">

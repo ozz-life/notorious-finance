@@ -16,8 +16,16 @@
 @import '../components/Outro/Outro.module.scss';
 @import '../components/Footer/Footer.module.scss';
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .container {
-  // position: relative;
   max-width: 1280px;
   margin: 0 auto;
 }
